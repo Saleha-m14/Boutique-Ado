@@ -19,8 +19,13 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
     {% endblock %} {% block extra_css %} {% endblock %} {% block corejs %}
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://kit.fontawesome.com/53989cf8ca.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -38,7 +43,7 @@
 
   <body>
     <header class="container-fluid fixed-top">
-      <div class="row">
+      <div id="topnav" class="row bg-white pt-lg-2 none d-lg-flex">
         <div
           class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left"
         >
