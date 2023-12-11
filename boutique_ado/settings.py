@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-cx6oj)hs8-d74c3_77vuy=gzj1bzw5e_ec(9xh%b2o1zk@d3q4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-saleha-m14-boutique-ado-d9717g2m2n.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-saleha-m14-boutique-ado-t5uigdwxni.us2.codeanyapp.com']
 
 
 # Application definition
@@ -75,6 +75,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'bag.contexts.bag_contents',
+
             ],
         },
     },
@@ -156,6 +158,9 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+FREE_DELIVERY_THRESHOLD = 40
+STANDARD_DELIVERY_PERCENTAGE = 10
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
